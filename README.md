@@ -1,4 +1,6 @@
-[![CircleCI](https://circleci.com/gh/devops-workflow/terraform-aws-s3-buckets?style=svg)](https://circleci.com/gh/devops-workflow/terraform-aws-s3-buckets)
+# Note: 
+This repo is fork-ed from https://github.com/HinhNguyen/terraform-aws-s3-buckets to customize some S3 config
+
 
 AWS S3 Buckets Terraform module
 ========================
