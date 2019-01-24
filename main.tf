@@ -63,7 +63,13 @@ resource "aws_s3_bucket" "this" {
   }
 
   cors_rule {
-    allowed_headers = ["Authorization", "Origin"]
+    allowed_headers = ["Authorization"]
+    allowed_methods = ["GET"]
+    allowed_origins = ["*"]
+    max_age_seconds = 3000
+  }
+  cors_rule {
+    allowed_headers = ["Origin"]
     allowed_methods = ["GET"]
     allowed_origins = ["*"]
     max_age_seconds = 3000
