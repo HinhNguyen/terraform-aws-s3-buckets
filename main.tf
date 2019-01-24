@@ -62,6 +62,12 @@ resource "aws_s3_bucket" "this" {
     enabled = "${var.versioned}"
   }
 
+  cors_rule {
+    allowed_headers = ["Authorization", "Origin"]
+    allowed_methods = ["GET"]
+    allowed_origins = ["*"]
+    max_age_seconds = 3000
+  }
   #acceleration_status
   #lifecycle_rule {}
   #logging {
